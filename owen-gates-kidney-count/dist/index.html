@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Owen Gates Kidney Count</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Header</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-fixed.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#">Owen Gates<span>&nbsp; Kidney Count</span></a></h1>
+
+		<nav>
+			<a href="#">Home</a>
+			<a href="#" class="selected">Blog</a>
+			<a href="#">Pricing</a>
+			<a href="#">About</a>
+			<a href="#">Faq</a>
+			<a href="#">Contact</a>
+		</nav>
+
+	</div>
+
+</header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+
+<!-- The content of your page would go here. -->
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+
+		var showHeaderAt = 150;
+
+		var win = $(window),
+				body = $('body');
+
+		// Show the fixed header only on larger screen devices
+
+		if(win.width() > 400){
+
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+
+				if(win.scrollTop() > showHeaderAt) {
+					body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+
+		}
+
+	});
+
+</script>
+
+  <h1 class = "#">How many kidneys does Owen Gates have?</h1>
+  <p>
+    According to anonymous sources, Owen Gates currently owns 3 kidneys. This count is up to date, and was last checked 4 minutes ago. According to our sources, we believe that Owen Gates is looking to aquire another kidney by August 28, 2023, but we cannot say for certain. It is believed that Owen Gates has considered selling one of his 3 kidneys for $300,000, but there is no way to say for certain. Currently, Owen Gates is wanted for arrest for Grand Larceny in the first degree and Money Laundering in the first degree, but, as far as we know, he is still at large. It has been speculated that he wishes to sell his kidney to pay his bail.
+  </p>
+  <h2 class = "#">What about gallbladders?</h2>
+  <p>
+    Although we do not have an up-to-date count for Owen Gate's gallbladders, last time we checked, it appeared as if Owen Gates had 1 gallbladder. This is the normal amount of gallbladders for humans, which might be hard to believe coming from Owen Gates, but it is the only number that we have evidence of being true.
+  </p>
+  <h2 class = "#">
+    Owen Gates Anatomy?
+  </h2>
+  <p>
+    Here is a live-updating image of Owen Gate's uninary tract.
+  </p>
+  <img src = "https://i.ibb.co/g7LcJBN/image-1.png" class = "tract"></img>
+  <p>Owen Gates has an incomplete duplex kidney, which means that he has 2 ureters attached to the halves, and 1 ureter attached to the other kidney.</p>
+  <p>And here is a diagram of an actual duplex kidney</p>
+  <img src = "https://i.ibb.co/Gn1YSJh/New-Project-6.png" class = "tract1"></img>
+  
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
